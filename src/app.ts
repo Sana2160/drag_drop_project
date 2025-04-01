@@ -1,3 +1,8 @@
+//Project State Management
+class ProjectState {
+  private projects: any[] = [];
+}
+
 // Validation
 interface Validatable {
   value: string | number;
