@@ -113,6 +113,19 @@ function autobind(_: any, _2: string, descriptor: PropertyDescriptor) {
   return adjDescriptor;
 }
 
+//Component Class
+class Component<T extends HTMLElement, U extends HTMLElement> {
+  templateElement: HTMLTemplateElement;
+  hostElement: T;
+  element: U;
+
+  constructor(
+    templateId: string,
+    hostElementId: string,
+    newElementId: string
+  ) {}
+}
+
 //ProjectList Class
 class ProjectList {
   templateElement: HTMLTemplateElement;
